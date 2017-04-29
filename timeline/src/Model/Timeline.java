@@ -1,5 +1,5 @@
 package Model;
-public class Timeline {// this is a change, isn't it?
+public class Timeline {
 	String startTime;
 	String endTime;
 	String title;
