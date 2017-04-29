@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="viewtimelinesanchorpane" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewTimelines">
+   <children>
+      <MenuBar layoutY="8.0" prefHeight="25.0" prefWidth="500.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Timeline">
+            <items>
+              <MenuItem fx:id="CreateMnu" mnemonicParsing="false" onAction="#CreateMnu" text="Create" />
+                  <MenuItem fx:id="DeleteMnu" mnemonicParsing="false" onAction="#DeleteMnu" text="Delete" />
+                  <MenuItem fx:id="ModifyMnu" mnemonicParsing="false" onAction="#ModifyMnu" text="Modify" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Event">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Add event" />
+                  <MenuItem mnemonicParsing="false" text="Remove event" />
+                  <MenuItem mnemonicParsing="false" text="Modify event" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Home">
+            <items>
+              <MenuItem fx:id="homepageBtn" mnemonicParsing="false" onAction="#homepageBtn" text="Home Page" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Line endX="280.0" layoutX="149.0" layoutY="86.0" startX="-50.0" />
+      <TextField layoutY="47.0" text="title" />
+      <Button layoutX="461.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
+      <Button layoutX="436.0" layoutY="73.0" mnemonicParsing="false" text="+" />
+      <Button layoutX="35.0" layoutY="74.0" mnemonicParsing="false" text="Events" />
+      <Button layoutX="162.0" layoutY="47.0" mnemonicParsing="false" text="Timeline details" />
+   </children>
+</AnchorPane>
