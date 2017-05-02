@@ -1,5 +1,9 @@
 package controller;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -7,8 +11,10 @@ import application.Main;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 
 public class ViewTimelines  implements Initializable,ControlledScreen{
 
@@ -22,6 +28,9 @@ public class ViewTimelines  implements Initializable,ControlledScreen{
 		// TODO Auto-generated method stub
 		handel=screenPage;
 	}
+
+    @FXML 
+    private Button deleteBtn;
     @FXML
     private MenuItem ModifyMnu;
     @FXML
@@ -33,22 +42,33 @@ public class ViewTimelines  implements Initializable,ControlledScreen{
     private MenuItem DeleteMnu;
     @FXML
     private MenuItem homepageBtn;
+    
     @FXML
-    void CreateMnu(ActionEvent event) {
+    void CreateMnu(ActionEvent event) {// menuitems inside the menubar
     	 handel.setScreen(Main.screen2ID);
     }
 
     @FXML
-    void DeleteMnu(ActionEvent event) {
+    void DeleteMnu(ActionEvent event) {// menuitems inside the menubar
 
     }
 
     @FXML
-    void ModifyMnu(ActionEvent event) {
+    void ModifyMnu(ActionEvent event) {// menuitems inside the menubar
 
     }
     @FXML
     void homepageBtn(ActionEvent event) {
         handel.setScreen(Main.screen1ID);
     }
+ 
+    @FXML
+   void deleteBtn()  // this button should remove the timeline object "-"
+    {   
+    	
+    }
+   
+    
+    
+    
 }

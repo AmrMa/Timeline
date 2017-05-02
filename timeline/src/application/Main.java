@@ -12,6 +12,8 @@ public class Main extends Application {
     public static String screen2File = "/view/CreateTimeline.fxml";
     public static String screen3ID = "ViewTimelines";
     public static String screen3File = "/view/ViewTimelines.fxml";
+    public static String screen4ID = "Timelines";
+    public static String screen4File = "/view/Timelines.fxml";
     @Override
     public void start(Stage primaryStage) {
         
@@ -19,6 +21,7 @@ public class Main extends Application {
         mainContainer.loadScreen(Main.screen1ID, Main.screen1File);
         mainContainer.loadScreen(Main.screen2ID, Main.screen2File); 
         mainContainer.loadScreen(Main.screen3ID, Main.screen3File);
+        mainContainer.loadScreen(Main.screen4ID, Main.screen4File);
         mainContainer.setScreen(Main.screen1ID);
         
         Group root = new Group();

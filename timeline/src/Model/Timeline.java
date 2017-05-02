@@ -31,8 +31,8 @@ public class Timeline {
 	
 	 public String toString()
 	{
-		String timeline = "Title: "+getTitle()+"Start Time: "+getStartTime()+
-				"End Time"+getEndTime()+"Description: "+getDescription();
+		String timeline = "Title:\n "+getTitle()+"Start Time:\n "+getStartTime()+
+				"End Time\n"+getEndTime()+"Description: \n"+getDescription();
 		return timeline;
 	}
 }

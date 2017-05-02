@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
@@ -31,11 +32,5 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Line endX="280.0" layoutX="149.0" layoutY="86.0" startX="-50.0" />
-      <TextField layoutY="47.0" text="title" />
-      <Button layoutX="461.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" text="-" />
-      <Button layoutX="436.0" layoutY="73.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="35.0" layoutY="74.0" mnemonicParsing="false" text="Events" />
-      <Button layoutX="162.0" layoutY="47.0" mnemonicParsing="false" text="Timeline details" />
    </children>
 </AnchorPane>

@@ -1,5 +1,8 @@
 package controller;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -42,13 +45,13 @@ public class CreateTimeline implements Initializable,ControlledScreen{
     private TextField title;
     @FXML
     void saveBtn(ActionEvent event) {
-        handel.setScreen(Main.screen3ID);
+        handel.setScreen(Main.screen4ID);
         String et= EndTime.getValue()+"";
       	String st=StartTime.getValue()+"";
    	    t.setTitle(title.getText().toString());
-      	t.setDescription(description.getText().toString());
+      /*	t.setDescription(description.getText().toString());
       	t.setEndTime(et);
-      	t.setStartTime(st);
+      	t.setStartTime(st);*/
       	Save_Timeline_ifo();
     }
 
@@ -57,7 +60,7 @@ public class CreateTimeline implements Initializable,ControlledScreen{
         handel.setScreen(Main.screen1ID);
     }
     public void Save_Timeline_ifo()
-    {
-    	System.out.println(t.toString());
+    {  
+    	
     }
 }

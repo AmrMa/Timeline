@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -9,6 +10,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 public class MainScreen  implements Initializable,ControlledScreen{
     Sessionhandler handel;
@@ -36,7 +39,9 @@ public class MainScreen  implements Initializable,ControlledScreen{
 
     @FXML
     void LoadBtn(ActionEvent event) {
-    
+        FileChooser chooser = new FileChooser();
+        chooser.setTitle("Open File");
+        File file = chooser.showOpenDialog(new Stage());
     }
 
 
