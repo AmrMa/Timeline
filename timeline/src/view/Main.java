@@ -40,8 +40,6 @@ public class Main implements Initializable,ControlledScreen{
     @FXML
     void amr(ActionEvent event) {
 
-      //  add.setOnAction(e -> {
-        	System.out.println("Hello world");
         	AnchorPane anchorPane = new AnchorPane();
             String style = String.format("-fx-background: rgb(%d, %d, %d);"+
                             "-fx-background-color: -fx-background;",
@@ -59,8 +57,7 @@ public class Main implements Initializable,ControlledScreen{
             AnchorPane.setBottomAnchor(button, 5.0);
             anchorPane.getChildren().addAll(label, button);
             timelineContent.getChildren().add(anchorPane);
-            timelinesanchorpane.getChildren().add(timelineContent);
-     //   });	
+         //   timelinesanchorpane.getChildren().add(timelineContent);
     }
     
     

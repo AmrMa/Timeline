@@ -1,6 +1,5 @@
 package controller;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URL;
@@ -49,18 +48,24 @@ public class CreateTimeline implements Initializable,ControlledScreen{
         String et= EndTime.getValue()+"";
       	String st=StartTime.getValue()+"";
    	    t.setTitle(title.getText().toString());
-      /*	t.setDescription(description.getText().toString());
+      	t.setDescription(description.getText().toString());
       	t.setEndTime(et);
-      	t.setStartTime(st);*/
-      	Save_Timeline_ifo();
+      	t.setStartTime(st);
+      	try{
+      	    PrintWriter writer = new PrintWriter("titles.txt", "UTF-8");
+      	  PrintWriter writer1 = new PrintWriter("Description.txt", "UTF-8");
+      	    writer.println(t.getTitle());
+      	    writer.println(t.getDescription());
+      	    writer.close();
+      	    writer1.close();
+      	} catch (IOException e) {
+      	   // do something
+      	}
     }
 
     @FXML
     void cancelBtn(ActionEvent event) {
         handel.setScreen(Main.screen1ID);
     }
-    public void Save_Timeline_ifo()
-    {  
-    	
-    }
+ 
 }
