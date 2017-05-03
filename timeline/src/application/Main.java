@@ -28,9 +28,11 @@ public class Main extends Application {
         root.getChildren().addAll(mainContainer);
         Scene scene = new Scene(root);
         scene.getStylesheets().addAll(this.getClass().getResource("application.css").toExternalForm());
+        primaryStage.setMinWidth(600);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Group 4");
       //  primaryStage.setResizable(false);
+        
         primaryStage.show();
     }
 

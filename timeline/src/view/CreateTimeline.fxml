@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="createtimelineanchorpane" prefHeight="500.0" prefWidth="500.0" stylesheets="application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateTimeline">
+<AnchorPane fx:id="createtimelineanchorpane" prefHeight="500.0" prefWidth="615.0" stylesheets="application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateTimeline">
    <children>
       <DatePicker fx:id="EndTime" layoutX="285.0" layoutY="128.0" />
       <DatePicker fx:id="StartTime" layoutX="55.0" layoutY="128.0" />
