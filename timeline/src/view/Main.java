@@ -34,10 +34,13 @@ public class Main implements Initializable,ControlledScreen{
     private VBox timelineContent;
     @FXML
     private AnchorPane Main_AnchorPane;
+
+    @FXML
+    private AnchorPane timelinesanchorpane;
     @FXML
     void amr(ActionEvent event) {
 
-        add.setOnAction(e -> {
+      //  add.setOnAction(e -> {
         	System.out.println("Hello world");
         	AnchorPane anchorPane = new AnchorPane();
             String style = String.format("-fx-background: rgb(%d, %d, %d);"+
@@ -56,33 +59,10 @@ public class Main implements Initializable,ControlledScreen{
             AnchorPane.setBottomAnchor(button, 5.0);
             anchorPane.getChildren().addAll(label, button);
             timelineContent.getChildren().add(anchorPane);
-            Main_AnchorPane.getChildren().add(timelineContent);
-        });	
+            timelinesanchorpane.getChildren().add(timelineContent);
+     //   });	
     }
-    public void amr()
-    {
-    add.setOnAction(e -> {
-    	System.out.println("Hello world");
-    	AnchorPane anchorPane = new AnchorPane();
-        String style = String.format("-fx-background: rgb(%d, %d, %d);"+
-                        "-fx-background-color: -fx-background;",
-                rng.nextInt(256),
-                rng.nextInt(256),
-                rng.nextInt(256));
-        anchorPane.setStyle(style);
-        Label label = new Label("Timeline "+(timelineContent.getChildren().size()+1));
-        AnchorPane.setLeftAnchor(label, 5.0);
-        AnchorPane.setTopAnchor(label, 5.0);
-        Button button = new Button("Remove");
-        button.setOnAction(evt -> timelineContent.getChildren().remove(anchorPane));
-        AnchorPane.setRightAnchor(button, 5.0);
-        AnchorPane.setTopAnchor(button, 5.0);
-        AnchorPane.setBottomAnchor(button, 5.0);
-        anchorPane.getChildren().addAll(label, button);
-        timelineContent.getChildren().add(anchorPane);
-        Main_AnchorPane.getChildren().add(timelineContent);
-    });	
-    }
+    
     
     
     
