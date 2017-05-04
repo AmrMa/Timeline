@@ -35,8 +35,7 @@ public class Main implements Initializable,ControlledScreen{
     @FXML
     private AnchorPane Main_AnchorPane;
 
-    @FXML
-    private AnchorPane timelinesanchorpane;
+
     @FXML
     void amr(ActionEvent event) {
 
