@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.ResourceBundle;
 
 import Model.Timeline;
+import application.Main;
 import controller.ControlledScreen;
 import controller.Sessionhandler;
 import javafx.event.ActionEvent;
@@ -11,10 +12,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
-public class Main implements Initializable,ControlledScreen{
+public class Main1 implements Initializable,ControlledScreen{
     Sessionhandler handel;
     Timeline t = new Timeline();
     @Override
@@ -27,6 +29,8 @@ public class Main implements Initializable,ControlledScreen{
 		handel=screenPage;
 	}
     Random rng = new Random();
+    @FXML
+    private MenuItem home;
     @FXML
     private Button add;
 
@@ -59,7 +63,10 @@ public class Main implements Initializable,ControlledScreen{
          //   timelinesanchorpane.getChildren().add(timelineContent);
     }
     
-    
+    @FXML
+    void home_btn(ActionEvent event) {
+    	  handel.setScreen(Main.screen1ID);
+    }
     
     
     
